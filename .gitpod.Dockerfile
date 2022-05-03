@@ -1,4 +1,5 @@
 FROM swift:5.6.1-focal
 
-RUN sudo install-packages \
-    make
+USER root
+RUN apt-get update && apt-get install -y 
+        make 
