@@ -1,2 +1,10 @@
 image: 
   file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      git clone https://github.com/vapor/toolbox.git
+      cd toolbox
+      git checkout 18.3.6
+      make install
+    
